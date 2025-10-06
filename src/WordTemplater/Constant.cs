@@ -1,9 +1,9 @@
 ﻿using SkiaSharp;
 
-namespace WordTemplater
+namespace WordTemplater;
+
+internal static class Constant
 {
-  internal static class Constant
-  {
     public const string HTML_PATTERN = "<html><head><meta charset=\"UTF-8\"></head><body>{0}</body></html>";
     public const string PICTURE_NAMESPACE = "http://schemas.openxmlformats.org/drawingml/2006/picture";
     public const long PIXEL_PER_INCH = 914400L;
@@ -22,11 +22,10 @@ namespace WordTemplater
     public static readonly string CURRENT_NODE = ".";
     public static readonly string CURRENT_INDEX = "_index";
     public static readonly string IS_LAST = "_last";
+}
 
-  }
-
-  internal static class FunctionName
-  {
+internal static class FunctionName
+{
     internal const string Default = "";
     internal const string Sub = "sub";
     internal const string Left = "left";
@@ -48,10 +47,10 @@ namespace WordTemplater
     internal const string EndLoop = "endloop";
     internal const string EndTable = "endtable";
     internal const string EndIf = "endif";
-  }
+}
 
-  internal static class OperatorName
-  {
+internal static class OperatorName
+{
     internal const string Gt = ">";
     internal const string Lt = "<";
     internal const string Eq1 = "==";
@@ -60,12 +59,12 @@ namespace WordTemplater
     internal const string Neq2 = "<>";
     internal const string Geq = ">=";
     internal const string Leq = "<=";
-  }
+}
 
-  internal enum CompareValue
-  {
+[Flags]
+internal enum CompareValue
+{
     Eq = 1,
     Gt = 2,
     Lt = 4
-  }
 }

@@ -10,3 +10,5 @@ _ReSharper.*
 *.ReSharper.user
 *.resharper.user 
 .vs/
+src/WordTemplater.Example/Output.docx
+.idea/

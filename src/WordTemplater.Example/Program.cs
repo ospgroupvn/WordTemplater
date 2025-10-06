@@ -27,13 +27,13 @@ using (var templateStream = File.OpenRead("Templates\\Template.docx"))
             {
                 exportedStream.CopyTo(output);
             }
-        }    
+        }
     }
-}    
+}
 
 var p = new Process();
 p.StartInfo = new ProcessStartInfo(exportedFileName)
 {
-   UseShellExecute = true
+    UseShellExecute = true
 };
 p.Start();
