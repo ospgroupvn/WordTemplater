@@ -1,0 +1,4 @@
+<Solution>
+    <Project Path="WordTemplater.Example/WordTemplater.Example.csproj"/>
+    <Project Path="WordTemplater/WordTemplater.csproj"/>
+</Solution>

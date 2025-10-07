@@ -1,51 +1,52 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>Library</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-	<Version>2.0.2</Version>
-	<VersionPrefix>1.0.1</VersionPrefix>
-	<PackageReadmeFile>README.md</PackageReadmeFile>
-    <Nullable>enable</Nullable>
-	<RepositoryUrl>https://github.com/luuducly/WordTemplater</RepositoryUrl>
-	<FileVersion>1.0.0.0</FileVersion>
-	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	<Title>WordTemplater</Title>
-	<Authors>luuducly</Authors>
-	<Company />
-	<Description>- Format data with many build-in function (upper, lower, if, format:#,##0.00, MM/dd/yyyy...)
- - Show or hide part of template with a condition
- - Repeat a part of template
- - Repeat a/multiple row of table
- - Insert from other document
- - Insert image, barcode, qrcode, rich text
- - Customizable new format and evaluate function</Description>
-	<Copyright>Copyright (c) Ly Luu Duc. MIT License.</Copyright>
-	<PackageProjectUrl>https://github.com/luuducly/WordTemplater</PackageProjectUrl>
-	<RepositoryType>git</RepositoryType>
-	<PackageReleaseNotes>See release notes at https://github.com/luuducly/WordTemplater/releases</PackageReleaseNotes>
-	<PackageTags>barcode-generator, openxml, qrcode-generator, autofill, word-template, export-word, formatting-data, mergefield, repeating-table, word, docx</PackageTags>
-	<PackageLicenseExpression>MIT</PackageLicenseExpression>
-  </PropertyGroup>
+    <PropertyGroup>
+        <OutputType>Library</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Version>3.0.0</Version>
+        <VersionPrefix>1.0.0</VersionPrefix>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <Nullable>enable</Nullable>
+        <RepositoryUrl>https://github.com/luuducly/WordTemplater</RepositoryUrl>
+        <FileVersion>1.0.0.0</FileVersion>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <Title>WordTemplater</Title>
+        <Authors>luuducly</Authors>
+        <Company/>
+        <Description>- Format data with many build-in function (upper, lower, if, format:#,##0.00, MM/dd/yyyy...)
+            - Show or hide part of template with a condition
+            - Repeat a part of template
+            - Repeat a/multiple row of table
+            - Insert from other document
+            - Insert image, barcode, qrcode, rich text
+            - Customizable new format and evaluate function
+        </Description>
+        <Copyright>Copyright (c) Ly Luu Duc. MIT License.</Copyright>
+        <PackageProjectUrl>https://github.com/luuducly/WordTemplater</PackageProjectUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageReleaseNotes>See release notes at https://github.com/luuducly/WordTemplater/releases</PackageReleaseNotes>
+        <PackageTags>barcode-generator, openxml, qrcode-generator, autofill, word-template, export-word, formatting-data, mergefield, repeating-table, word, docx</PackageTags>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="BarcodeLib" Version="3.0.3" />
-    <PackageReference Include="DocumentFormat.OpenXml" Version="2.20.0" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="SkiaSharp.NativeAssets.Linux.NoDependencies" Version="2.88.6" />
-    <PackageReference Include="SkiaSharp.QrCode" Version="0.6.0" />
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="BarcodeLib" Version="3.0.3"/>
+        <PackageReference Include="DocumentFormat.OpenXml" Version="3.3.0"/>
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+        <PackageReference Include="SkiaSharp.NativeAssets.Linux.NoDependencies" Version="2.88.6"/>
+        <PackageReference Include="SkiaSharp.QrCode" Version="0.6.0"/>
+    </ItemGroup>
 
-  <ItemGroup>
-	  <None Include="README.md" Pack="true" PackagePath="\" />
-  </ItemGroup>
+    <ItemGroup>
+        <None Include="README.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
 
-  <ItemGroup>
-    <None Update="LICENSE.txt">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
+    <ItemGroup>
+        <None Update="LICENSE.txt">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+    </ItemGroup>
 
 </Project>

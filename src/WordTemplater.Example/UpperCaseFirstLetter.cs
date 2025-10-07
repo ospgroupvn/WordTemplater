@@ -1,23 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Globalization;
 
-namespace WordTemplater.Example
+namespace WordTemplater.Example;
+
+internal class UpperCaseFirstLetter : IEvaluator
 {
-    internal class UpperCaseFirstLetter : IEvaluator
+    public string Evaluate(object fieldValue, List<object> parameters)
     {
-        public string Evaluate(object fieldValue, List<object> parameters)
+        if (fieldValue != null)
         {
-            if (fieldValue != null)
-            {
-                var strValue = fieldValue.ToString();
-                TextInfo textInfo = new CultureInfo("en-US", false).TextInfo;
-                return textInfo.ToTitleCase(strValue);
-            }
-            return string.Empty;
+            var strValue = fieldValue.ToString();
+            var textInfo = new CultureInfo("en-US", false).TextInfo;
+            return textInfo.ToTitleCase(strValue);
         }
+
+        return string.Empty;
     }
 }
